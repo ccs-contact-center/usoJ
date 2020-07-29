@@ -47,7 +47,7 @@ class Actividad3View extends Component {
   async onSave(e) {
     try {
       var respuesta = await API.guardaActividad(this.state)
-      alert('Se guardo la actividad, con id: ' + respuesta[0].id)
+      alert('Se guardo actividad: 3, con id: ' + respuesta[0].id)
     } catch (err) {
       console.log('loggea si hay un error')
     }
